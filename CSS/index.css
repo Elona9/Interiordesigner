@@ -4,7 +4,7 @@
 }
 
 .bg{
-    background-color: black;
+    /* background-color: black; */
     background-size: cover;
     background-repeat: no-repeat;
     height: 100;
@@ -78,7 +78,7 @@
 
 
 .register-background{ 
-    background-image: url(simeon-galabov-kkLyLor1RWE-unsplash.jpg);
+    /* background-image: url(../Photos/simeon-galabov-kkLyLor1RWE-unsplash.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
     height: 100;
@@ -88,31 +88,8 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .bg{
-    background-image: url(simeon-galabov-kkLyLor1RWE-unsplash.jpg);
+    background-image: url(../Photos/simeon-galabov-kkLyLor1RWE-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;

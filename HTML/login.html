@@ -40,20 +40,24 @@
 
     </style>
 </head>
-<body background="../Photos/simeon-galabov-kkLyLor1RWE-unsplash.jpg">
-    <div class="register-background"></div>
+<body>
 
-    <div class="formulari">
-        <img width="70px"height="50px" src="../Photos/FEC4C971-5DBE-43A3-BD65-442A21BDB7FE.png">
-        <h2>Login</h2>
-       <form>
-            username
-            <input type="text" id="username" name="username" required>
-            password
-            <input type="password" id="password" name="password" required>
-             <input type="submit" value="Login" class="login1">
-        </form>
+    <div class="register-background">
+        <div class="formulari">
+            <img width="70px" height="50px" src="../Photos/FEC4C971-5DBE-43A3-BD65-442A21BDB7FE.png" alt="Logo">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <input type="submit" value="Login" class="login1">
+            </form>
+        </div>
     </div>
+
     <script src="../JAVASCRIPT/index.js"></script>
 </body>
 </html>

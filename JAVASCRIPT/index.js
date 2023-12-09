@@ -1,40 +1,26 @@
-document.addEventListener("DOMContentLoaded"),
-function(ngjarja) {
-const BtnSubmit = document.getElementById('submit-btn');
-}
-
-const validate = (ngjarja) => {
-ngjarja.preventDefault();}
-
-const perdoruesi = document.getElementById('userid');
-
-
-const fjalkalimi = document.getElementById('pass');
-
-
-const emrin = document.getElementById('emri');
-
-
-const emailin = document.getElementById('adresaEmailit');
-
-
-    if (perdoruesi.value === "") {
-alert("Ju lutem shtoni perdoruesin.");
-perdoruesi.focus();
-return false;
-}
-    if (fjalkalimi.value === "") {
-alert("Ju lutem shtoni Fjalkalimin.");
-fjalkalimi.focus();
-return false;
-}
-    if (emrin.value === "") {
-alert("Ju lutem shtoni emrin e Plote.");
-emrin.focus();
-return false;
-}
-    if (emailin.value === "") {
-alert("Ju lutem shtoni email'in.");
-emailin.focus();
-return false;
+<script type="text/javascript">
+    window.onload = function() {
+        sessionStorage.setItem("username", "Elona_Bytyqi");
+        sessionStorage.setItem("password", "Elona_Bytyqi");
     }
+    var inputs = document.getElementsByTagName('input');
+    var login = document.getElementById('log-in'); 
+    var form = document.querySelector('form');
+  
+    form.onsubmit = () => { return false; }
+
+    inputs[2].onclick = () => { return false; } 
+
+    login.onclick = () => {
+        if (inputs[0].value !== "" && inputs[1].value !== "") {
+            console.log("Performing login...");
+        } else {
+            if (inputs[0].value !== "") {
+                inputs[0].nextElementSibling.textContent = "Duhet vendosur emri";
+                setTimeout(() => {
+                    inputs[0].nextElementSibling.textContent = "";
+                }, 2000);
+            }
+        }
+    }
+</script>
