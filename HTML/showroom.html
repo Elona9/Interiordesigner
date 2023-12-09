@@ -1,47 +1,125 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <link rel="stylesheet" type="text/css" href="../CSS/showroom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat+Alternates:ital,wght@1,600&family=Montserrat:wght@100;300&family=Smooch+Sans:wght@100;900&display=swap" rel="stylesheet">
+    <title>showroom</title>
 </head>
-<body>
-    <div class="taskbar">
-        <h1>INTEROR DESIGNER</h1>
-    </div>
-    <div class="image">
-        <img  lt="" src="7cf7ef0b0698aaa5f58d55fbe9b6e986.jpg">
-    
-    </div>
-        <div class="box">
-            <div id="interior"><img  width="300px"  height="300px" lt="" src="7a221cc61780ccde6e0443b2d87d43d1.jpg">
-            interior deigner </div>
-            
-            <div><img width="300px"  height="300px"  lt="" src="7a221cc61780ccde6e0443b2d87d43d1.jpg">ktu nuk di
+<body >
+    <div class="bg">  <header>
+        <div class="header">
+            <div id="logo">
+                <h1 style="font-size:3em">Interior Designer</h1></div>
+            <div class="pageButtons">
+                <a href="index.html">Home</a>
+              <a href="showroom.html">ShowRoom</a>
+            <a href="about.html">About us </a>
+            <a href="login.html">Log in</a>
             </div>
+        
+    </div>
+    </header>
+
+
+        <style>
+            #kontenti {
+                display: flex ;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Segoe UI light', Tahoma;
+                width: 500px;
+                margin:0 auto;
+            }
+            #kontenti img {
+                max-width: 700px;
+                height: 400px;
+            }
+            button{
+                border-radius: 50px;
+                border-style: inherit;
+                width: 40px;
+                height: 40px;
+                font: 10pt;
+            }
+            button:hover{
+                background-color: rgb(189, 186, 186);
+            }
+        
+        </style>
+
     
-            <div><img width="300px"  height="300px"  lt="" src="7a221cc61780ccde6e0443b2d87d43d1.jpg">prova 20.20</div>
+        <section id="showroom">
+        
+            <form action="">
+            <div class="gallery">
+                <figure>
+                    <img src="../Photos/foto1.jpg" alt="Image 1">
+                    <figcaption>Small Apartment</figcaption>
+                </figure>
+                <figure>
+                    <img src="../Photos/foto2.jpg" alt="Image 2">
+                    <figcaption>Modern Kitchen</figcaption>
+                </figure>
+                <figure>
+                    <img src="../Photos/foto3.jpg" alt="Image 3">
+                    <figcaption>Living Room and Dining</figcaption>
+                </figure>
+                <figure>
+                    <img src="../Photos/foto4.jpg" alt="Image 3">
+                    <figcaption>Modern Skillion Living Room</figcaption>
+                </figure>
+                <figure>
+                    <img src="../Photos/foto6.jpg" alt="Image 3">
+                    <figcaption>Three Arches in Living Room</figcaption>
+                </figure>
+                <figure>
+                    <img src="../Photos/foto7.jpg" alt="Image 3">
+                    <figcaption>Living Room with Chimeny</figcaption>
+                </figure>
+                <figure>
+                    <img src="../Photos/foto8.jpg" alt="Image 3">
+                    <figcaption>Cottage Living Room</figcaption>
+                </figure>
+                <figure>
+                    <img src="..//Photos/foto9.jpg" alt="Image 3">
+                    <figcaption>Mid Century Living Room</figcaption>
+                </figure>
+                <figure>
+                    <img src="../Photos/foto10.jpg" alt="Image 3">
+                    <figcaption>Nordic Library Living Room</figcaption>
+                </figure>
+                <figure>
+                    <div id="kontenti">
+                        <button onclick="changeImg()">Next</button>
+                    </div>
+            </div>
+        </form>
+        </section>
     
+        <script>
+            let i = 0;
+            let imgArray = ['pht1.jpg', 'pht2.jpg','pht3.jpeg','pht4.jpg'];
     
-            <div><img width="300px"  height="300px"  lt="" src="7a221cc61780ccde6e0443b2d87d43d1.jpg">prov 1.20</div>
+            function changeImg(){
+                document.getElementById('slideshow').src = imgArray[i];
     
-            <div><img width="300px"  height="300px"    lt="" src="7a221cc61780ccde6e0443b2d87d43d1.jpg">prov 34.2</div>
+                if(i< imgArray.length -1){
+                    i++;
+                }
+                else{
+                    i=0;
+                }
+                //setTimeout("changeImg()", 2600);
+            }
+            document.addEventListener(onload, changeImg());
+        </script>
     
-            <div><img width="300px"  height="300px"   lt="" src="7a221cc61780ccde6e0443b2d87d43d1.jpg">prov 23.43</div>
-    
-            <div><img width="300px"  height="300px"     lt="" src="7a221cc61780ccde6e0443b2d87d43d1.jpg">56.23</div>
-    
-            <div><img width="300px"  height="300px"  lt="" src="7a221cc61780ccde6e0443b2d87d43d1.jpg">prov.234</div>
-    
-            <div><img width="300px"  height="300px"  lt="" src="7a221cc61780ccde6e0443b2d87d43d1.jpg"></div>
-    
-    
-            <div><img width="300px"  height="300px"  lt="" src="7a221cc61780ccde6e0443b2d87d43d1.jpg"></div>
-    
-            <div><img width="300px"  height="300px" lt="" src="7a221cc61780ccde6e0443b2d87d43d1.jpg"></div>
-    
-            <div><img width="300px"  height="300px" lt="" src="7a221cc61780ccde6e0443b2d87d43d1.jpg"></div>
-    
-       
+
 </body>
-</html> -->
+</html>

@@ -38,3 +38,4 @@ alert("Ju lutem shtoni email'in.");
 emailin.focus();
 return false;
     }
+
