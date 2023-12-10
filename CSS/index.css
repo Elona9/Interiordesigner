@@ -1,6 +1,7 @@
 *{
     margin: 0%;
     padding: 0%;
+   
 }
 
 .bg{
@@ -8,6 +9,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 100;
+    
 }
 .header{
     height: 50px;
@@ -93,4 +95,14 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+}
+
+.sliderContainer{
+    width: 100%;
+    height: 600px;
+}
+
+#loginButons:hover{
+    cursor: pointer;
+    background-color: #348037c9;
 }
